@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<style>
+		.grand-parent {
+			background-color: seagreen;
+			width: 50vw;
+			height: 50vh;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+
+		.parent {
+			background-color: brown;
+			height: 40%;
+			margin: 0 50px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+
+		.child {
+			background-color: gold;
+			width: 200px;
+			height: 80%;
+			margin: auto;
+			color: brown;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="grand-parent">
+		GrandParent
+		<div class="parent" id="parent-1">
+			Parent
+			<div class="child" id="first-child" >Child</div>
+			<div class="child" title="Text">Child</div>
+			<a href="#" id="link" 
+			data-url="some value">Some link</a>
+		</div>
+		<div class="parent">
+			Parent
+			<div class="child" id="first-child">Child</div>
+			<div class="child">Child</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
